@@ -1,55 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 
-
-
-
 html {
     background-color: brown;
-    margin:0;
+    margin: 0;
     padding: 0;
+    font-size: 16px;
 }
 
-
-header{
-    position :fixed;
+header {
+    position: fixed;
     width: 100%;
     display: flex;
     flex-direction: column;
     top: 0;
     margin: 0;
     backdrop-filter: blur(50px);
-    background-color: rgba(165, 42, 42, 0.589) ;
+    background-color: rgba(165, 42, 42, 0.589);
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.363);
 }
-
 
 body {
     font-family: 'Roboto Slab', serif;
     color: aliceblue;
-    margin:0;
+    margin: 0;
     padding: 0;
 }
 
 h1 {
-width: 100%;
-align-self: center;
-text-align: center;
-
+    width: 100%;
+    text-align: center;
 }
+
 main {
-margin-top: 150px;
-
+    margin-top: 150px;
 }
 
-main ul, header ul{
+main ul, header ul {
     list-style: none;
     display: flex;
     flex-direction: row;
     gap: 20px;
     justify-content: center;
     padding: 0;
-    
-    
 }
 
 main h2 {
@@ -64,28 +56,29 @@ main h2 {
 
 a {
     text-decoration: none;
-    color:aliceblue;
+    color: aliceblue;
     font-family: 'Roboto Slab', serif;
 }
 
 img {
-    width: 50%;
-    padding: 50px;
+    width: 100%;
+    padding: 10px;
 }
 
 footer {
     color: black;
-    width: 1000px;
     padding: 10px 0;
-
-
-
 }
 
-footer img, footer ul{
+footer img, footer ul {
     display: flex;
-    width: 70%;
     list-style: none;
-    justify-self: center;
-    flex-direction: row;    
+    flex-direction: row;
+    justify-content: center;
 }
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24
+    }}
